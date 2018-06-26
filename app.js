@@ -1,7 +1,7 @@
 'use strict';
 
 // Open Weather Map url string fragments
-const baseUrl = 'http://api.openweathermap.org/data/2.5/';
+const baseUrl = 'https://api.openweathermap.org/data/2.5/';
 const conditions = 'weather';
 const forecast = 'forecast';
 const zip = '?zip=';
