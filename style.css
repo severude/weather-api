@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+}
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* Base Styles */
+html {
+	height: 100%;
+    background: linear-gradient(#367CD6, #183968) no-repeat;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #183968;
+}
+
+/* Page Background*/
+.container {
+	position: relative;
+	background: #4A90e2;
+	width: 50%;
+	margin: 5em auto 1em;
+	border-radius: 2%;
+}
+.cloud1 {
+	position: absolute;
+	top: 25%;
+	left: -30%;
+}
+.cloud2 {
+	position: absolute;
+	top: 15%;
+	right: -15%;
+}
+
+/* Styles for Search Page */
+#form {
+	padding: 1em;
+}
+.header {
+	color: #eaeaea;
+}
+.intro {
+	margin: 1em 0 2em;
+	color: #eaeaea;
+}
+.search {
+	border-radius: 5px;
+	border: 1px solid #eaeaea;
+	padding: 8px 15px;
+	font-size: 14px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    box-shadow: 0 0 0 1000px white inset !important;
+}
+.submit {
+	border-radius: 5px;
+	border: 1px solid #eaeaea;
+	padding: 8px 15px;
+	font-size: 14px;
+	background-color: #367CD6;
+	color: #eaeaea
+}
+.searchMessage {
+	margin-top: 1em;
+	color: #eaeaea;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+/* Styles for Weather Page*/
+.location {
+	padding: 1em 2em .5em;
+}
+.fa-search {
+	float: left;
+	padding: .5em 0;
+}
+.city {
+	margin: 0 0 0 2em;
+	float: left;
+	font-size: 1.5em;
+	color: #eaeaea;
+}
+.fa-times {
+	float: right;
+	padding: .5em 0;
+}
+.fas:hover {
+	color: #367CD6;
+}
+hr {
+	border-color: #4A90e2;
+	margin: 0 2em;
+}
+.conditions {
+	color: #eaeaea;
+}
+.temperature {
+	width: 65%;
+	float: left;
+	text-align: right;
+	font-size: 8em;
+}
+.condition {
+	width: 35%;
+	float: left;
+}
+.f {
+	margin-top: 1em;
+	margin-bottom: .5em;
+	font-size: 2em;
+}
+.forecast {
+	background-color: #eaeaea;
+	border-radius: 0 0 2% 2%;
+}
+.oneDay,
+.twoDay,
+.threeDay,
+.fourDay,
+.fiveDay {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+.date {
+	margin-top: .5em;
+	font-size: .9em;
+	color: #183968;
+}
+.high {
+	margin-top: -.5em;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.low {
+	margin-bottom: .5em;
+}
+
+/* Mobile Settings */
+@media screen and (max-width: 370px) {
+	.search,
+	.submit {
+		padding: 8px 10px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.container {
+		width: 100%;
+	}
+	.header {
+		font-size: 1.5em;
+	}
+	.temperature {
+		font-size: 6em;
+	}
+	.f {
+		font-size: 1.5em;
+	}
+}
