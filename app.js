@@ -138,7 +138,7 @@ $('#form').submit( event => {
 
 // Format required month and day values
 function getDate(date) {
-	let index = ['Jan', 'Fab', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+	let index = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 	let month = parseInt(date.substr(5,2)) - 1;
 	let day = parseInt(date.substr(8,2));
 	return index[month] + ' ' + day;
